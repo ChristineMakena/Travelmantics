@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DealActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/txtName"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/round"
+            android:hint="@string/titlehint"
+            android:inputType="textPersonName"
+            android:padding="5dp"
+            android:paddingStart="5dp"
+            android:paddingLeft="5dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints,RtlSymmetry"
+            tools:layout_editor_absoluteY="61dp" />
+
+        <EditText
+            android:id="@+id/txtPrice"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/round"
+            android:hint="@string/price_hint"
+            android:inputType="number"
+            android:padding="5dp"
+            android:paddingStart="5dp"
+            android:paddingLeft="5dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtName"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/txtDescription"
+            android:layout_width="match_parent"
+            android:layout_height="138dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/round"
+            android:hint="@string/description_hint"
+            android:inputType="textCapSentences|textMultiLine"
+            android:padding="5dp"
+            android:gravity="start"
+            android:paddingStart="5dp"
+            android:paddingLeft="5dp"
+            android:scrollHorizontally="false"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtPrice"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/btnImage"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_margin="16dp"
+            android:text="Upload Picture" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="275dp"
+            app:cardElevation="10dp">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="match_parent"
+                android:layout_height="277dp" />
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
